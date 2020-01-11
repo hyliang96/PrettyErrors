@@ -780,10 +780,6 @@ def install(find = False, add_to_user = False, add_to_site = False, pth = False,
         return [] if _in_virtualenv else [site.getusersitepackages()]
 
     def getallsitepackages():
-        print('getsitepackages()')
-        print(getsitepackages())
-        print('getusersitepackages()')
-        print(getusersitepackages())
         return getsitepackages() + getusersitepackages()
 
 
